@@ -1,0 +1,79 @@
+{
+  "selected": "M1",
+  "supported_on_dev": true,
+  "margin_vs_best_baseline_pp": 0.6133954710963674,
+  "best_baseline": "src_own_nat",
+  "params": {
+    "5": "0.05",
+    "10": "0.1",
+    "20": "0.2",
+    "30": "0.35"
+  },
+  "all_params": {
+    "M1": {
+      "5": "0.05",
+      "10": "0.1",
+      "20": "0.2",
+      "30": "0.35"
+    },
+    "M2": {
+      "kappa": "40"
+    },
+    "M3": {}
+  },
+  "no_harm_k5": {
+    "M1": "True",
+    "M2": "True",
+    "M3": "False"
+  },
+  "k_averaged_bac": {
+    "M1": 69.279,
+    "M2": 69.103,
+    "M3": 68.566,
+    "own_only": 60.984,
+    "src_own_eq": 65.255,
+    "src_own_nat": 68.666,
+    "src_only": 68.656
+  },
+  "sha256": {
+    "DESIGN.md": "65ea2efab2e7ff6ead09716d3a7992807f0d7c987dda628774a3f6c72d2f795b",
+    "run_dev.py": "ad3c2ae86d3fcc0e77504ab7d7b2e738254a33e091bfd15cc1aa7d31477adf1e",
+    "analyze_dev.py": "e9add6d8cf76fc841f90d6900ac0de02ef9ff5390060075c8ade99ab19ac322c",
+    "dev_results.csv": "dd39c6f8ff7d8dc4ede34a5d22dbd6056f6f8a3c63d894fe8068d38d1b0a28db",
+    "prep_stieger2021.py": "5fbc535da6f8c80b55e6bb688e76af4edfa758089d8a9afd9623c739ceebc6c6",
+    "download_stieger_session1.py": "f4d86a7935a5cfdfb45a3f737c92d9a55597a59859bc35bd9dad39d37fa0b8e8"
+  },
+  "frozen_at_utc": "2026-09-28T13:50:39+00:00",
+  "protocol": {
+    "ks": [
+      5,
+      10,
+      20,
+      30
+    ],
+    "draws": 3,
+    "channels": 21,
+    "w_grid": [
+      "nat",
+      "0.05",
+      "0.1",
+      "0.2",
+      "0.35",
+      "0.5"
+    ],
+    "kappas": [
+      "5",
+      "10",
+      "20",
+      "40",
+      "80",
+      "160"
+    ],
+    "subject_seed": "1000 x dataset_index + subject (cho 0, lee 1, bnci 2, physionetmi 3, stieger2021 4)",
+    "draw_order": "P/E split, then k = 5, 10, 20, 30 x draw = 0, 1, 2",
+    "m3_inner_cv": "StratifiedKFold(5, shuffle=True, random_state=0)",
+    "tie_rule": "M1 smaller w, M2 larger kappa, M3 smaller w",
+    "a3_bootstrap": "subject-level percentile, 10000 resamples, seed 2026",
+    "sealed_set": "Stieger2021 session 1, S21-S62, >= 60 left/right trials"
+  }
+}

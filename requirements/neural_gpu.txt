@@ -1,0 +1,8 @@
+# Neural decoders (CSPNet, EEGNet, EEG-Conformer); Python 3.9.13
+# install torch first: pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.2
+pandas==2.3.3
+threadpoolctl==3.7.0
+joblib==1.5.3
