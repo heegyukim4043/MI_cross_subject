@@ -20,11 +20,14 @@ The folder mirrors the project layout so that every script runs with its relativ
 | `analysis_outputs/cmpb_budget_20260924/` | Unlabeled target-trial budget and causal online EA helpers |
 | `analysis_outputs/cmpb_decomposition_20260924/` | Performance-loss decomposition, source + own-label reference, split-half separability |
 | `analysis_outputs/cmpb_unit_intervention_20260925/` | Amplitude-rescaling intervention (design in `DESIGN.md`) |
-| `analysis_outputs/cmpb_rq_strengthening_20260928/` | Order-sensitivity (two-factor) attribution, dataset-weighted estimates, size-matched LOSO vs LODO, regularizer comparison, Riemannian controls, volt vs microvolt pilot, four-dataset target-access tiers |
+| `analysis_outputs/cmpb_rq_strengthening_20260928/` | Order-sensitivity (two-factor) attribution, dataset-weighted estimates, size-matched LOSO vs LODO, regularizer comparison, Riemannian controls, volt vs microvolt pilot, four-dataset target-access tiers, Cho2017 unit-correction comparison (`pilot_cho_unitfix.py`), Lee2019 session verification (`verify_lee_sessions.py`) |
+| `analysis_outputs/cmpb_neural_decomposition/` | Neural runs used in the paper (`run_neural_queue.py`: CSPNet LODO five seeds, 21-channel LOSO, EEGNet) and their analysis (`analyze_neural_multiseed.py`, `analyze_neural_loso21.py`) |
 | `analysis_outputs/cmpb_confirmation_dreyer2023/` | Pre-specified confirmation on Dreyer2023 (`CONFIRMATORY_PLAN.md`) |
 | `analysis_outputs/cmpb_method_A_budget_fusion/` | Few-shot source-target fusion: design (`DESIGN.md`, with dated amendments), development run, selection, freeze record (`FROZEN.json`), Stieger2021 download/preprocessing and the single sealed test |
 | `analysis_outputs/ea_implementation_audit_20260924/` | Functional test used in the survey of public EA implementations (`AUDIT_PROTOCOL.md`) |
 | `tools/check_scale_equivariance.py` | Numerical checks for covariance-whitening alignment (see below) |
+| `tools/correct_cho2017_units.py` | Cho2017 amplitude-unit correction and selection of the version the analyses read (see Data preparation) |
+| `figures/` | Scripts for Figs. 1-6 of the paper (read the analysis outputs) |
 | `requirements/` | Package versions of the three environments used |
 | `data_manifest/SHA256SUMS` | SHA-256 of the preprocessed inputs used for the reported analyses |
 
@@ -73,7 +76,7 @@ without ICA. Place the files as listed in `data_manifest/SHA256SUMS`.
 
 | Dataset | Script | Notes |
 |---|---|---|
-| Cho2017, Lee2019 | `MI_test/MI_loso_project/preprocess_moabb_sfreq100.py` | MOABB `MotorImagery` path, 201 samples; Lee2019 training phase of both sessions |
+| Cho2017, Lee2019 | `MI_test/MI_loso_project/preprocess_moabb_sfreq100.py`, then `tools/correct_cho2017_units.py` | MOABB `MotorImagery` path, 201 samples; Lee2019 training phase of both sessions. The second script corrects the Cho2017 amplitude unit (below) |
 | BNCI2014-001 | `analysis_outputs/cmpb_bdea_20260924/prep_bnci2014001.py` | keeps session and run labels in chronological order |
 | PhysionetMI | `analysis_outputs/cmpb_bdea_20260924/prep_physionetmi.py` | keeps run labels in chronological order |
 | Dreyer2023 | `analysis_outputs/cmpb_confirmation_dreyer2023/prep_dreyer2023.py` | data-preparation environment |
@@ -81,6 +84,20 @@ without ICA. Place the files as listed in `data_manifest/SHA256SUMS`.
 
 The analyses use the channels shared by the datasets in each comparison (21 channels for the four
 development datasets).
+
+**Cho2017 amplitude unit.** As returned by MOABB, the Cho2017 signals are about 32 times larger than those of the
+other datasets. The released BioSemi values appear to be 31.25-nV analog-to-digital steps that MOABB treats as
+microvolts, so `tools/correct_cho2017_units.py` multiplies the EEG by 0.03125 (exact in float32). It keeps both
+versions (`cho2017_moabb_uncorrected.npz`, `cho2017_unitcorrected.npz`), copies the selected one to `cho2017.npz`
+(default: corrected), and checks both against the array hashes in `data_manifest/SHA256SUMS`. With
+`--npz_dir DIR` it also writes the four development files (Cho2017 corrected) to one folder for the neural runner
+(`MI_NPZ_DIR`). Relative-floor results are identical for both versions (scale equivariance); results without
+alignment or with an absolute floor differ, and `pilot_cho_unitfix.py` compares them.
+
+**Lee2019 sessions.** The stored file keeps session 1 in rows 0-99 and session 2 in rows 100-199 of each subject.
+`analysis_outputs/cmpb_rq_strengthening_20260928/verify_lee_sessions.py` checks this for all subjects against the
+raw data (about 67 GB; download folder `LEE_DOWNLOAD_DIR`, `LEE_DELETE_RAW=1` removes each subject's raw files
+after its check).
 
 ## Analyses
 
@@ -93,7 +110,9 @@ outputs next to themselves; most are resumable.
 | Scale equivariance | `cmpb_unit_intervention_20260925/run_unit_intervention.py`, `analyze_unit_intervention.py`; `cmpb_rq_strengthening_20260928/run_regularizers.py`, `analyze_regularizers.py`, `run_riemann_controls.py`, `pilot_uv.py` |
 | Dataset-level alignment | `cmpb_bdea_20260924/equivalence_tests.py`; `rq_reaggregate.py` (LODO4 equivalence) |
 | Target-data access | `cmpb_rq_strengthening_20260928/run_tiers_lodo4.py`, `analyze_tiers.py`; `cmpb_budget_20260924/run_budget_causal.py`; `cmpb_decomposition_20260924/run_labels_separability.py` |
-| Neural replication | `MI_test/MI_loso_project/run_cspnet_generic.py` (neural environment), e.g. `MI_SEED=1 MI_EA_FLOOR=relative python run_cspnet_generic.py --mode lodo --datasets cho2017 lee2019 bnci2014001 physionetmi --align subject --run_id lodo4_relative_s1` with `MI_NPZ_DIR` pointing to the four NPZ files; `--align none | subject | dataset_subject` |
+| Neural replication | `cmpb_neural_decomposition/run_neural_queue.py` (neural environment; all CSPNet and EEGNet runs of the paper through `MI_test/MI_loso_project/run_cspnet_generic.py`), then `analyze_neural_multiseed.py --chofix` and `analyze_neural_loso21.py`. A single run: `MI_SEED=1 MI_EA_FLOOR=relative MI_NPZ_DIR=... python run_cspnet_generic.py --mode lodo --datasets cho2017 lee2019 bnci2014001 physionetmi --align subject --run_id gen_lodo4_relative_s1`; `--align none | subject | dataset_subject`, `--adabn`, `--model eegnet` |
+| Cho2017 unit correction | `tools/correct_cho2017_units.py`; `cmpb_rq_strengthening_20260928/pilot_cho_unitfix.py` (before/after comparison); rerun the analyses above with each version selected for the full comparison |
+| Figures | `figures/make_fig1_study_design.py`, `make_fig2_methods_schematic.py`, `make_results_figures.py` (Figs. 3-6; run after the analyses) |
 
 Paths in the table are relative to `analysis_outputs/` unless they start with `MI_test/`.
 
@@ -102,7 +121,9 @@ Paths in the table are relative to `analysis_outputs/` unless they start with `M
 - **Dreyer2023 confirmation.** Hypotheses H1-H6, tests and decision rules are fixed in
   `analysis_outputs/cmpb_confirmation_dreyer2023/CONFIRMATORY_PLAN.md`, written before the data were
   downloaded. Run `prep_dreyer2023.py` (data-preparation environment), then `run_confirmatory.py` and
-  `analyze_confirmatory.py`.
+  `analyze_confirmatory.py`. The pre-specified (primary) run used the uncorrected Cho2017 file as one of the source
+  datasets (`python tools/correct_cho2017_units.py --select uncorrected`); the post hoc sensitivity analysis repeats it
+  with the corrected file (`--select corrected`). Only H2 depends on this choice.
 - **Few-shot fusion rule with a sealed test.** `analysis_outputs/cmpb_method_A_budget_fusion/DESIGN.md`
   (with dated amendments) defines the candidates, the selection rule and hypotheses A1-A3. `run_dev.py`
   and `analyze_dev.py` select and freeze the rule in `FROZEN.json`; `run_sealed.py` runs the single test

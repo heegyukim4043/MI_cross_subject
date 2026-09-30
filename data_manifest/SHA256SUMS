@@ -1,6 +1,16 @@
 # SHA-256 of the preprocessed input files used for the reported analyses (paths relative to the repository root).
 # bnci2014001.npz and physionetmi.npz are also expected at analysis_outputs/cmpb_bdea_20260924/ (same files).
-f820119a259c48366e510239ae54a6de372a94328c3093285a5b6445ff3ad581  MI_test/preprocessed_sfreq100/cho2017.npz
+#
+# Cho2017: the analyses read MI_test/preprocessed_sfreq100/cho2017.npz. The reported development analyses use the
+# unit-corrected version (x 0.03125), created by tools/correct_cho2017_units.py from the MOABB output of
+# preprocess_moabb_sfreq100.py; the pre-specified Dreyer2023 analysis used the uncorrected version. NPZ file hashes
+# can differ between NumPy versions and compression settings, so the tool checks the SHA-256 of the EEG array
+# (np.ascontiguousarray(X).tobytes()) instead:
+#   X of the uncorrected (MOABB) file:  188f759a4ddfb49413afa2dd1b8815942926a8041000ceff802c1f7f4880ca19
+#   X of the unit-corrected file:       6fbc8deaa2aaedae4b6f57a7938251c0bf825304ef7655e71fd4607987b77d50
+# File hashes of the two versions as used here:
+f820119a259c48366e510239ae54a6de372a94328c3093285a5b6445ff3ad581  MI_test/preprocessed_sfreq100/cho2017_moabb_uncorrected.npz
+9982fb2820bc8b9f6cb6273e0e60fb2e4c7cbfeef275024f75523a2a21bd4eae  MI_test/preprocessed_sfreq100/cho2017_unitcorrected.npz
 8e7a908fec322692f3043f3d957da6cc1e6dd9e62ac4974d78e97a836c51dc1d  MI_test/preprocessed_sfreq100/lee2019.npz
 df821f1aac3d5372671ba9ef28a5317d7c4ec28f4858e339fe7e22173d9f4ecc  analysis_outputs/cmpb_bdea_20260924/bnci2014001.npz
 fae443a5f63f10cd51f8267f76b4ddc16d2c4a9e7690f76e0bf972bc85e7f2f0  analysis_outputs/cmpb_bdea_20260924/physionetmi.npz
