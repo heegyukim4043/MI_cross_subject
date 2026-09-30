@@ -132,10 +132,3 @@ Paths in the table are relative to `analysis_outputs/` unless they start with `M
 
 Both plans were fixed and time-stamped before the corresponding data were accessed; they were not
 registered in a public registry.
-
-## Relation to earlier code
-
-Results produced with the original absolute-floor EA are superseded. In this release the EA default
-is `relative` (earlier code defaulted to `legacy`), wrapper functions no longer force `legacy`, and
-`cross_dataset.run_cross(seed=...)` sets the training seed. The analyses above select the EA mode
-explicitly, so these default changes do not alter their results.
