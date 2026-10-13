@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "source_and_target_hashes_verified": true,
+  "code_and_protocol_hashes_verified": true,
+  "frozen_prediction_hashes_verified": true,
+  "independently_recomputed_bac": true,
+  "independently_recomputed_10000_draws": true,
+  "max_bootstrap_difference": 2.6645352591003757e-15,
+  "n_subjects": 87,
+  "n_trials": 20792,
+  "trials_per_subject_min": 160,
+  "trials_per_subject_max": 240,
+  "positive_reference_count": 311,
+  "target_absolute_clipping_median": 17.0,
+  "target_absolute_clipping_range": [
+    15,
+    17
+  ],
+  "target_relative_clipping_max": 0,
+  "historical_relative_max_bac_difference_pp": {
+    "relative_subject": 1.4210854715202004e-14,
+    "relative_dataset_subject": 1.4210854715202004e-14
+  },
+  "old_h1_recomputed_pp": 5.477619872787367,
+  "old_h1_archived_holm_p": 6.263793758406588e-11,
+  "inference": "post-hoc; fixed source models and target cohort; secondary CIs pointwise",
+  "runtime_seconds": 38.6841475
+}

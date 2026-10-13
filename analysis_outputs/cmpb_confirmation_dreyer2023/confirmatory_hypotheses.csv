@@ -1,0 +1,7 @@
+hypothesis,n,estimate,estimate_unit,raw_p,holm_p,ci_low,ci_high,supported,note
+H1,87,5.477619872787367,pp relative-minus-legacy,1.565948439601647e-11,6.263793758406588e-11,,,True,median legacy floor count=17.0
+H2,87,4.461913965705226,pp relative-SubjectEA-minus-none,6.030262103617284e-11,1.809078631085185e-10,,,True,one-sided paired Wilcoxon
+H3,87,0.0933096304954855,pp DatasetEA->SubjectEA-minus-SubjectEA,5.77122809033756e-06,5.77122809033756e-06,-0.23035369891065394,0.416972959901625,True,paired TOST; 90% t CI; +/-1 pp margin
+H4,87,0.5005771905899562,pp LOSO-minus-cross,,,0.05038561970872984,0.9435848534252054,True,pre-registered paired-bootstrap 95% CI; Holm not applicable to the fixed CI rule
+H5,87,0.47144831918532615,Spearman rho,2.022336917861239e-06,4.044673835722478e-06,,,True,one-sided Spearman; calibration separability vs evaluation BAC
+H6,87,0.012603347449081877,pp few-shot-minus-LOSO,,,-0.02251798077569469,0.05091752369429239,True,3-draw subject mean; pre-registered paired-bootstrap 95% CI

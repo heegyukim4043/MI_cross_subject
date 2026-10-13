@@ -1,0 +1,11 @@
+{
+  "state": "complete",
+  "completed_fits": 4,
+  "target_subjects": 87,
+  "source_subjects": 224,
+  "target_trials": 20792,
+  "elapsed_seconds": 38.6841475,
+  "target_labels_read_after_predictions": true,
+  "bootstrap_draws": 10000,
+  "completed_utc": "2026-10-08T19:16:28.024190+00:00"
+}

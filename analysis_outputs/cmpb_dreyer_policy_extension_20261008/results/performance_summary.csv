@@ -1,0 +1,5 @@
+policy,alignment,n,mean_bac_pct,sd_bac_pct
+coherent_absolute,subject,87,65.22954113561714,13.19516648917647
+coherent_absolute,dataset_subject,87,68.29850323500159,13.648028164714995
+relative,subject,87,68.36513008363495,13.558404701655828
+relative,dataset_subject,87,68.45843971413045,13.31917237083607

@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-10-08T19:15:50.715715+00:00",
+  "design_status": "post_hoc_external_extension",
+  "inputs": {
+    "cho2017": {
+      "path": "D:\\2.연구\\7.MI_crosssubject\\MI_test\\preprocessed_sfreq100\\cho2017.npz",
+      "sha256": "9982fb2820bc8b9f6cb6273e0e60fb2e4c7cbfeef275024f75523a2a21bd4eae"
+    },
+    "lee2019": {
+      "path": "D:\\2.연구\\7.MI_crosssubject\\MI_test\\preprocessed_sfreq100\\lee2019.npz",
+      "sha256": "8e7a908fec322692f3043f3d957da6cc1e6dd9e62ac4974d78e97a836c51dc1d"
+    },
+    "bnci2014001": {
+      "path": "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_bdea_20260924\\bnci2014001.npz",
+      "sha256": "df821f1aac3d5372671ba9ef28a5317d7c4ec28f4858e339fe7e22173d9f4ecc"
+    },
+    "physionetmi": {
+      "path": "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_bdea_20260924\\physionetmi.npz",
+      "sha256": "fae443a5f63f10cd51f8267f76b4ddc16d2c4a9e7690f76e0bf972bc85e7f2f0"
+    },
+    "dreyer2023": {
+      "path": "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_confirmation_dreyer2023\\dreyer2023.npz",
+      "sha256": "9b5ef988bc7dd8ac39a89afa7dfa494f1e780e1036d17db10ee98b66e2d95816"
+    }
+  },
+  "code_and_protocol": {
+    "D:\\2.연구\\7.MI_crosssubject\\MI_test\\MI_loso_project\\mrfbcsp_loso.py": "29caaa499115464c6c14c28db0d291a39bdd90f55eadf98c127878d04012135f",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_floor_gate_20260924\\run_floor_gate.py": "9f4425928ba98873a09b985b992c31ab4bddc0ed781ccc809a5a3ce95531652f",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_budget_20260924\\run_budget_causal.py": "7ad7de5d804aa1619baef0dad81fec3e3503fea5f3a666cc80b73a35351ee40b",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_compare.py": "42dd5eb1a5fb4cbf6420cf5aec3ff99cf380a5b07da014845dbaa09b6042eca2",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_dreyer_policy_extension_20261008\\run.py": "d8399b1c21050608359db30bc8b932059c3be911701e28f24bf0223d861e99c5",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_dreyer_policy_extension_20261008\\PROTOCOL.md": "599f7a5821a5f4dc667f5c7ca42f335cb7d4d5e37ef328b5093367d1f4174f61",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_confirmation_dreyer2023\\run_manifest.json": "1e0820574da7f309e91addd4602fcf4e0cc370bcb70c1ce38346d2fb983cbd53",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\lock.json": "2ac69aa06022fed017eae59b98abf6a4de10aec17a6e90a6aa8e32299e23fbcc"
+  },
+  "channels": [
+    "FC3",
+    "FC1",
+    "C1",
+    "C3",
+    "C5",
+    "CP3",
+    "CP1",
+    "Pz",
+    "CPz",
+    "Fz",
+    "FC4",
+    "FC2",
+    "Cz",
+    "C2",
+    "C4",
+    "C6",
+    "CP4",
+    "CP2"
+  ],
+  "old_cho_sha256": "f820119a259c48366e510239ae54a6de372a94328c3093285a5b6445ff3ad581",
+  "reason_four_fits": "Original Cho differs; rerun both policies in matched precision",
+  "conditions": [
+    [
+      "coherent_absolute",
+      "subject"
+    ],
+    [
+      "coherent_absolute",
+      "dataset_subject"
+    ],
+    [
+      "relative",
+      "subject"
+    ],
+    [
+      "relative",
+      "dataset_subject"
+    ]
+  ],
+  "threads": 4,
+  "n_csp": 8,
+  "n_times": 200,
+  "n_bootstrap": 10000,
+  "bootstrap_seed": 20261008,
+  "environment": {
+    "python": "3.9.13",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2"
+  }
+}

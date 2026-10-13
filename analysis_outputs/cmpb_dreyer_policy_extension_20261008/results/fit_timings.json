@@ -1,0 +1,18 @@
+[
+  {
+    "condition": "predictions_coherent_absolute_subject",
+    "seconds": 4.0506868
+  },
+  {
+    "condition": "predictions_coherent_absolute_dataset_subject",
+    "seconds": 12.1438823
+  },
+  {
+    "condition": "predictions_relative_subject",
+    "seconds": 4.077432400000003
+  },
+  {
+    "condition": "predictions_relative_dataset_subject",
+    "seconds": 12.111418499999996
+  }
+]

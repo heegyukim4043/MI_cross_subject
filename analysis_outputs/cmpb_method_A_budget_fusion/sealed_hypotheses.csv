@@ -1,0 +1,4 @@
+hypothesis,n,estimate_pp,raw_p,holm_p,supported,note,ci_low,ci_high
+A1,41,-0.09266241694066897,0.6011805199809714,1.0,False,"selected - src_only, k in {10,20,30}",,
+A2,41,0.022122375383314533,0.5306502825637835,1.0,False,"selected - src_own_nat, k in {5,10,20,30}",,
+A3,41,0.1672015782473533,,,True,"selected - src_only at k=5; subject bootstrap 10000, seed 2026",-0.8501350919060351,1.1676321587928318

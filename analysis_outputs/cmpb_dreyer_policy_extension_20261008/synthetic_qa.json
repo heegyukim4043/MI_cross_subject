@@ -1,0 +1,22 @@
+{
+  "tests": [
+    "coherent_absolute_subject_coherent",
+    "coherent_absolute_dataset_subject_coherent",
+    "relative_subject_coherent",
+    "relative_dataset_subject_coherent",
+    "relative_unclipped_whitening",
+    "paired_bootstrap_constant_difference",
+    "policy_swap_reverses_contrast",
+    "synthetic_fit_predict_smoke"
+  ],
+  "n_tests": 8,
+  "passed": true,
+  "eeg_opened": false,
+  "helpers": {
+    "D:\\2.연구\\7.MI_crosssubject\\MI_test\\MI_loso_project\\mrfbcsp_loso.py": "29caaa499115464c6c14c28db0d291a39bdd90f55eadf98c127878d04012135f",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_floor_gate_20260924\\run_floor_gate.py": "9f4425928ba98873a09b985b992c31ab4bddc0ed781ccc809a5a3ce95531652f",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_budget_20260924\\run_budget_causal.py": "7ad7de5d804aa1619baef0dad81fec3e3503fea5f3a666cc80b73a35351ee40b",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_compare.py": "42dd5eb1a5fb4cbf6420cf5aec3ff99cf380a5b07da014845dbaa09b6042eca2"
+  },
+  "runner_sha256": "d8399b1c21050608359db30bc8b932059c3be911701e28f24bf0223d861e99c5"
+}
