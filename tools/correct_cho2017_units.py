@@ -1,17 +1,19 @@
-"""Correct the amplitude unit of the preprocessed Cho2017 file and select which version the analyses read.
+"""Apply the adopted Cho2017 amplitude factor and select the analysis array version.
 
-The released Cho2017 recordings (BioSemi ActiveTwo) appear to store 31.25-nV analog-to-digital steps, which MOABB
-treats as microvolts; the MOABB output is therefore about 32 times too large. The correction multiplies the EEG by
-0.03125 (= 31.25 nV / 1 uV). Because 0.03125 is a power of two, the float32 result is exact and reversible.
+The factor 0.03125 is an operational representation choice, NOT a verified physical-unit correction.
+An informal acquisition account is not a calibration/export record. This tool does not establish a
+BioSemi, BCI2000 or MOABB conversion error. See docs/CHO_AMPLITUDE_PROVENANCE.md. Historical filenames
+and the corrected/uncorrected CLI choices are preserved for compatibility, not as calibration claims.
+Recorded array hashes identify the two study inputs; they do not certify their physical units.
 
 All analyses read MI_test/preprocessed_sfreq100/cho2017.npz. This tool keeps both versions next to it:
-  cho2017_moabb_uncorrected.npz   output of preprocess_moabb_sfreq100.py (as returned by MOABB)
+  cho2017_moabb_uncorrected.npz   original project-loader array (MNE Epochs path)
   cho2017_unitcorrected.npz       x 0.03125
-and copies the selected one to cho2017.npz. The reported development analyses use the corrected version; the
-pre-specified Dreyer2023 analysis (primary result) was run with the uncorrected version.
+and copies the selected one to cho2017.npz. Development uses the scaled version; the original
+pre-specified Dreyer2023 analysis used the original version. --npz_dir always exports scaled Cho.
 
 Usage (from the repository root):
-  python tools/correct_cho2017_units.py                     # create both versions, select the corrected one
+  python tools/correct_cho2017_units.py                     # create both versions, select scaled input
   python tools/correct_cho2017_units.py --select uncorrected
   python tools/correct_cho2017_units.py --npz_dir DIR       # also build a folder for run_cspnet_generic.py (MI_NPZ_DIR)
 The EEG arrays are checked against the SHA-256 values in data_manifest/SHA256SUMS (file hashes of .npz archives can

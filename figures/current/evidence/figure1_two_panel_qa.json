@@ -1,0 +1,120 @@
+{
+  "scope": "Figure 1 separate exports only; no manuscript edits; Figure 2 unchanged",
+  "estimator": "Mean of four dataset means with weight 1/4, 224 subjects",
+  "uncertainty": {
+    "type": "95% percentile CI (2.5th/97.5th percentiles, linear interpolation)",
+    "sampling_unit": "Subjects resampled with replacement within each fixed dataset",
+    "pairing": "Same sampled subject indices across all four conditions; contrasts calculated per subject",
+    "resamples": 10000,
+    "seed": 20261007,
+    "rng": "NumPy PCG64",
+    "status": "Exploratory inference specified after observing point estimates",
+    "limitations": "Marginal conditional intervals; no retraining, trial sampling, cohort/reference-estimation or new-dataset uncertainty",
+    "draw_quantiles_match_all_seven_csv_intervals": true,
+    "K_equals_paired_increment_difference_on_every_saved_draw": true,
+    "panel_a": "Marginal condition-mean intervals",
+    "panel_b": "Marginal intervals for each paired within-policy increment and directly paired K"
+  },
+  "rows": {
+    "absolute_S": {
+      "scope": "equal_dataset",
+      "scale": "1",
+      "metric": "absolute_S",
+      "n": "224",
+      "estimate": "65.00167824158072",
+      "ci95_low": "62.57430795006276",
+      "ci95_high": "67.65679139124997",
+      "unit": "percent",
+      "resamples": "10000",
+      "seed": "20261007"
+    },
+    "absolute_DS": {
+      "scope": "equal_dataset",
+      "scale": "1",
+      "metric": "absolute_DS",
+      "n": "224",
+      "estimate": "69.61130908981761",
+      "ci95_low": "67.160029752934",
+      "ci95_high": "72.25479713122138",
+      "unit": "percent",
+      "resamples": "10000",
+      "seed": "20261007"
+    },
+    "relative_S": {
+      "scope": "equal_dataset",
+      "scale": "1",
+      "metric": "relative_S",
+      "n": "224",
+      "estimate": "69.60949393488451",
+      "ci95_low": "67.18980508103516",
+      "ci95_high": "72.22386525296533",
+      "unit": "percent",
+      "resamples": "10000",
+      "seed": "20261007"
+    },
+    "relative_DS": {
+      "scope": "equal_dataset",
+      "scale": "1",
+      "metric": "relative_DS",
+      "n": "224",
+      "estimate": "69.7895016540418",
+      "ci95_low": "67.30557986215705",
+      "ci95_high": "72.42908895759062",
+      "unit": "percent",
+      "resamples": "10000",
+      "seed": "20261007"
+    },
+    "absolute_increment": {
+      "scope": "equal_dataset",
+      "scale": "1",
+      "metric": "absolute_increment",
+      "n": "224",
+      "estimate": "4.60963084823689",
+      "ci95_low": "3.5068143604557966",
+      "ci95_high": "5.7587404983869375",
+      "unit": "pp",
+      "resamples": "10000",
+      "seed": "20261007"
+    },
+    "relative_increment": {
+      "scope": "equal_dataset",
+      "scale": "1",
+      "metric": "relative_increment",
+      "n": "224",
+      "estimate": "0.1800077191572882",
+      "ci95_low": "-0.16103516875865637",
+      "ci95_high": "0.5240735602804687",
+      "unit": "pp",
+      "resamples": "10000",
+      "seed": "20261007"
+    },
+    "increment_difference": {
+      "scope": "equal_dataset",
+      "scale": "1",
+      "metric": "increment_difference",
+      "n": "224",
+      "estimate": "4.4296231290796015",
+      "ci95_low": "3.344636140339838",
+      "ci95_high": "5.524424094455477",
+      "unit": "pp",
+      "resamples": "10000",
+      "seed": "20261007"
+    }
+  },
+  "sources_sha256": {
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_paired_policy_ci_20261007\\results\\bootstrap_summary.csv": "14e0d5ee53efb46fcf52a71decc6f577001af7502884d80bd35c526fdd5a53c3",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_paired_policy_ci_20261007\\results\\aggregate_bootstrap_draws.npz": "9df12f242475de9013daf40f81d38058eaddcd5b02ddeb748a5f19edfe3edeaf",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_paired_policy_ci_20261007\\PROTOCOL.md": "15254dec3f757e4869b0f805470322092eb0eb88a702b62c027baa3a63b48ddb",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_paired_policy_ci_20261007\\analyze.py": "6c49330ce69efbfc0fe980ab2fa34e0a79805c1552d6d954a891cd5fcadee617"
+  },
+  "exports_sha256": {
+    "Figure_1_bar.pdf": "08f038c1a32ed6935a5712e0a47eb6d2ae8183468e89c329e5dfb74312fa14ee",
+    "Figure_1_bar.png": "921884618e26218f82be01d3f46c63394883766a3b0469ba3ac2c5dd8e549904"
+  },
+  "visual_review": "PNG viewed: no observed overlap or clipping",
+  "pdf_checks": {
+    "pages": 1,
+    "raster_images": 0,
+    "text_bounds_ok": true
+  }
+}

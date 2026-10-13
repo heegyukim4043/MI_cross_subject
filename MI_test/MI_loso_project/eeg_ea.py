@@ -1,9 +1,11 @@
 """Euclidean Alignment (EA) for EEG cross-subject transfer.
 
 EA whitens each subject independently with that subject's mean covariance.
-The transform uses unlabeled EEG only. The default ``relative`` floor is scale-consistent:
-results do not depend on the amplitude unit of the stored EEG. ``legacy`` (absolute floor)
-is kept only to reproduce superseded results and violates this scale equivariance.
+The transform uses unlabeled EEG only. The default ``relative`` floor preserves the
+positive-global-scale contract in exact arithmetic. Floating-point agreement must be checked.
+``legacy`` and ``absolute64`` retain fixed dimensional floors for explicit comparisons:
+rescaling EEG alone may change their outputs; coherent raw-stage conversion also scales eps
+by the squared amplitude factor. Unit consistency does not certify regularization adequacy.
 
 Reference: He et al., IEEE Transactions on Biomedical Engineering, 2019.
 """
