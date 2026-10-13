@@ -1,0 +1,5 @@
+dataset,n,declared_unit,mean_eigen_min,mean_eigen_median,mean_eigen_max,absolute_epsilon,epsilon_over_mean_eigen_median,absolute_clipped_min,absolute_clipped_median,absolute_clipped_max,relative_clipped_max,channels
+cho2017,52,V; Cho calibration provenance unresolved,7.733798185888409e-10,2.6493320881293827e-09,3.9253257488636175e-08,1e-08,3.78817093856921,19,20.0,20,0,21
+lee2019,54,V per saved preprocessing contract,1.3780932191731188e-09,4.9174385299301005e-09,2.0159009265704e-08,1e-08,2.0383177553896337,17,20.0,20,0,21
+bnci2014001,9,V per saved preprocessing contract,3.061190500215028e-09,7.06699315841253e-09,1.2711113277099712e-08,1e-08,1.415028962932563,18,20.0,20,0,21
+physionetmi,109,V per saved preprocessing contract,1.0045561991148577e-09,5.249050372648e-08,4.149042138006623e-07,1e-08,0.19051065030940592,9,16.0,20,0,21

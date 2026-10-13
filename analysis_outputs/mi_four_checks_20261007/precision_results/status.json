@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "fits": 32,
+  "total": 32,
+  "subjects": 224,
+  "elapsed_seconds": 146.7173519,
+  "alignment_checks_pass": true,
+  "prediction_flips": 1,
+  "max_decision_difference": 0.0003192424774169922
+}

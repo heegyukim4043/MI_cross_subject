@@ -1,0 +1,22 @@
+contrast,seed,pooled_pp,equal_weight_pp
+EA gain (relative - none),2026,4.926537787186983,4.606880915687306
+EA gain (relative - none),1,4.51451673274049,4.096912307746685
+EA gain (relative - none),2,4.532849923471576,4.215408334529322
+EA gain (relative - none),3,5.281411551490799,4.493180755885843
+EA gain (relative - none),4,5.1603841898463,4.470954714636702
+numerical artifact (relative - legacy),2026,4.748668819546886,4.563388569365298
+numerical artifact (relative - legacy),1,4.640892772376694,4.017284816439782
+numerical artifact (relative - legacy),2,4.866708955097796,4.185981565681337
+numerical artifact (relative - legacy),3,5.404925624904642,4.610894641342577
+numerical artifact (relative - legacy),4,5.733122455212302,5.148896332139358
+DatasetEA increment (dsea_relative - relative),2026,-0.2562417348163427,-0.3152959117998385
+DatasetEA increment (dsea_relative - relative),1,0.0844282172457375,0.05095547225965797
+DatasetEA increment (dsea_relative - relative),2,0.3456396564170238,0.0928658769579192
+DatasetEA increment (dsea_relative - relative),3,0.03130440463197034,-0.041352154548926004
+DatasetEA increment (dsea_relative - relative),4,-0.22669353744329684,-0.17847414565597933
+AdaBN (adabn_relative - relative),2026,0.39511060683454374,0.4715338581668752
+AdaBN (adabn_relative - relative),1,0.2318831670087962,0.233033395995493
+AdaBN (adabn_relative - relative),2,0.4248267489760578,0.36019190459430184
+AdaBN (adabn_relative - relative),3,-0.23113180818758886,-0.029850050229625856
+AdaBN (adabn_relative - relative),4,0.2106143587883185,0.18950817135863077
+legacy DatasetEA increment (dsea_legacy - legacy),2026,5.180044339221728,5.07111503367597

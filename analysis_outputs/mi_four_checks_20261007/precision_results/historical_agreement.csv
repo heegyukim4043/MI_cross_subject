@@ -1,0 +1,17 @@
+policy,alignment,dataset,prediction_flips
+coherent_absolute,subject,cho2017,0
+coherent_absolute,subject,lee2019,0
+coherent_absolute,subject,bnci2014001,0
+coherent_absolute,subject,physionetmi,0
+coherent_absolute,dataset_subject,cho2017,0
+coherent_absolute,dataset_subject,lee2019,0
+coherent_absolute,dataset_subject,bnci2014001,0
+coherent_absolute,dataset_subject,physionetmi,0
+relative,subject,cho2017,0
+relative,subject,lee2019,0
+relative,subject,bnci2014001,0
+relative,subject,physionetmi,0
+relative,dataset_subject,cho2017,0
+relative,dataset_subject,lee2019,0
+relative,dataset_subject,bnci2014001,0
+relative,dataset_subject,physionetmi,0

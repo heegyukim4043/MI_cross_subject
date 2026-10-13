@@ -1,0 +1,6 @@
+{
+  "fixtures": 20,
+  "control_cases": 140,
+  "failed_expectations": 0,
+  "scope": "Deterministic synthetic coverage; not clinical sensitivity/specificity or performance prediction"
+}

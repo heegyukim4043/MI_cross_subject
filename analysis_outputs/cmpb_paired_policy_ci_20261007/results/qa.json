@@ -1,0 +1,17 @@
+{
+  "subject_scores_recomputed": 1792,
+  "all_archive_bac_match": true,
+  "all_comparison_points_match": true,
+  "labels_subject_arrays_match": true,
+  "fixture_tests_pass": true,
+  "subjects_per_dataset": {
+    "cho2017": 52,
+    "lee2019": 54,
+    "bnci2014001": 9,
+    "physionetmi": 109
+  },
+  "no_raw_eeg_opened": true,
+  "no_training": true,
+  "no_manuscript_edits": true,
+  "completed_utc": "2026-10-08T03:27:10.601699+00:00"
+}

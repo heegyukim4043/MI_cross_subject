@@ -1,0 +1,22 @@
+{
+  "subject_scores_verified": 1792,
+  "prediction_flips": [
+    {
+      "policy": "coherent_absolute",
+      "alignment": "dataset_subject",
+      "dataset": "cho2017",
+      "subject": 34,
+      "row": 6755,
+      "y": 0,
+      "pred_1": 1,
+      "pred_scaled": 0,
+      "decision_1": 3.3588148653507233e-06,
+      "decision_scaled": -3.189779818058014e-07
+    }
+  ],
+  "array_tolerance": 1e-05,
+  "array_checks_pass": true,
+  "decision_tolerance": 0.001,
+  "decision_checks_pass": true,
+  "exact_prediction_invariance": false
+}

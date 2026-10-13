@@ -1,5 +1,8 @@
-"""Pilot: effect of correcting the Cho2017 unit (released values interpreted as 31.25-nV BioSemi ADC steps, so MOABB's
-volts are about 32x too large; correction factor 0.03125) on the LODO4 and Cho LOSO results.
+"""Historical pilot: effect of the adopted Cho2017 x0.03125 amplitude version on LODO4 and Cho LOSO.
+
+The physical calibration is unresolved; this is not proof of ADC-step or loader error.
+The filename and output version names are historical identifiers. The amplitude heuristic below
+is not a validated version/calibration detector. See docs/CHO_AMPLITUDE_PROVENANCE.md.
 
 Only Cho2017 is rescaled; the other datasets are unchanged. CSP-LDA and TS-LR (as in the unit intervention),
 21 channels, conditions: no alignment, absolute (legacy) and relative floor, SubjectEA and DatasetEA->SubjectEA.
@@ -25,8 +28,8 @@ def align(x, S, floor, alignment, name):
 
 def main():
     data, _ = ui.load_inputs(False)
-    # Start from the MOABB (uncorrected) scale whichever version is in place: the corrected file has a median |x| of
-    # about 2e-6 V, the uncorrected one about 32 times more. Division by 0.03125 is exact in float32.
+    # Historical amplitude heuristic for the study arrays only; it does not verify
+    # physical units or identify arbitrary input versions. Preserve for archival replay.
     if float(np.median(np.abs(data["cho2017"]["X"]))) < 1e-5:
         data["cho2017"] = {**data["cho2017"], "X": (data["cho2017"]["X"] / np.float32(FACTOR)).astype(np.float32)}
     rows = []

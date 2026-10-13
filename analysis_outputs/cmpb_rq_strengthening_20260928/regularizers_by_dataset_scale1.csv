@@ -1,0 +1,17 @@
+classifier,regularizer,bnci2014001,cho2017,lee2019,physionetmi
+CSP-LDA,absolute64,70.99,60.64,67.28,61.1
+CSP-LDA,ledoit_wolf,74.73,64.97,70.18,66.99
+CSP-LDA,legacy,70.99,60.64,67.28,61.1
+CSP-LDA,oas,74.96,64.95,70.03,67.16
+CSP-LDA,rank_aware,75.19,65.48,70.25,67.51
+CSP-LDA,relative,75.19,65.48,70.25,67.51
+CSP-LDA,trace_loading,75.42,65.35,70.41,67.67
+CSP-LDA,unregularized,75.19,65.48,70.25,67.51
+TS-LR,absolute64,69.87,59.25,67.89,64.12
+TS-LR,ledoit_wolf,75.81,64.96,70.65,65.76
+TS-LR,legacy,69.91,59.25,67.89,64.12
+TS-LR,oas,75.96,65.12,70.66,65.84
+TS-LR,rank_aware,76.08,65.93,70.78,66.79
+TS-LR,relative,76.08,65.93,70.78,66.79
+TS-LR,trace_loading,75.85,65.92,70.69,66.69
+TS-LR,unregularized,76.08,65.93,70.78,66.79

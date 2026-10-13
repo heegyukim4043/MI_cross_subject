@@ -1,0 +1,76 @@
+{
+  "deterioration": {
+    "file": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\cmpb_rq_strengthening_20260928\\rq1_robustness.csv",
+    "sha256": "5f4137a331b1d747bbc68a2eabfb78922d9509f7ec7341a8e550b7655d4f183e",
+    "supplement": "S6.3 / Table S6.3",
+    "rows": [
+      {
+        "dataset": "cho2017",
+        "kind": "contrast",
+        "name": "relative EA vs none (LODO)",
+        "mean": 5.137820512820512,
+        "p10": -1.499999999999999,
+        "coverage_ge70": NaN,
+        "ntr_lt0": 19.230769230769237,
+        "ntr_lt_minus5": 3.8461538461538463
+      },
+      {
+        "dataset": "lee2019",
+        "kind": "contrast",
+        "name": "relative EA vs none (LODO)",
+        "mean": 3.935185185185185,
+        "p10": -3.5000000000000058,
+        "coverage_ge70": NaN,
+        "ntr_lt0": 25.925925925925924,
+        "ntr_lt_minus5": 9.25925925925926
+      },
+      {
+        "dataset": "bnci2014001",
+        "kind": "contrast",
+        "name": "relative EA vs none (LODO)",
+        "mean": 6.905864197530866,
+        "p10": 1.6666666666666716,
+        "coverage_ge70": NaN,
+        "ntr_lt0": 11.11111111111111,
+        "ntr_lt_minus5": 0.0
+      },
+      {
+        "dataset": "physionetmi",
+        "kind": "contrast",
+        "name": "relative EA vs none (LODO)",
+        "mean": 7.945192217161739,
+        "p10": -3.715415019762849,
+        "coverage_ge70": NaN,
+        "ntr_lt0": 29.357798165137616,
+        "ntr_lt_minus5": 5.504587155963304
+      },
+      {
+        "dataset": "all",
+        "kind": "contrast",
+        "name": "relative EA vs none (LODO)",
+        "mean": 6.285024089799437,
+        "p10": -3.428260869565209,
+        "coverage_ge70": NaN,
+        "ntr_lt0": 25.44642857142857,
+        "ntr_lt_minus5": 5.803571428571429
+      }
+    ]
+  },
+  "prediction_changes": {
+    "file": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\cmpb_unit_intervention_20260925\\analysis\\prediction_disagreement.csv",
+    "sha256": "59ea2ce924cf119ba41f8985ab35a79012336865a3d88e18beae1b35be5bb4a0",
+    "supplement": "S8 / Table S8.2",
+    "maximum_row": {
+      "classifier": "CSP-LDA",
+      "floor": "legacy",
+      "alignment": "dataset_subject",
+      "held_out": "physionetmi",
+      "scale_label": "1e-6",
+      "n_trials": 4918,
+      "n_disagree": 1732,
+      "disagreement_rate": 0.3521756811712078
+    }
+  },
+  "audit_protocol": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\ea_implementation_audit_20260924\\AUDIT_PROTOCOL.md",
+  "audit_results": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\ea_implementation_audit_20260924\\AUDIT_RESULTS.md"
+}

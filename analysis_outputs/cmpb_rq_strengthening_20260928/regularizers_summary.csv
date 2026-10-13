@@ -1,0 +1,17 @@
+classifier,regularizer,1,1e-3,1e-6,max_abs_change,subjects_with_any_change_%
+CSP-LDA,absolute64,62.88,61.727,61.738,1.153,94.643
+CSP-LDA,ledoit_wolf,67.599,67.599,67.599,0.0,0.0
+CSP-LDA,legacy,62.88,61.729,61.736,1.15,94.643
+CSP-LDA,oas,67.651,67.651,67.651,0.0,0.0
+CSP-LDA,rank_aware,68.01,68.01,68.01,0.0,0.0
+CSP-LDA,relative,68.01,68.01,68.01,0.0,0.0
+CSP-LDA,trace_loading,68.105,68.105,68.105,0.0,0.0
+CSP-LDA,unregularized,68.01,68.01,68.01,0.0,0.0
+TS-LR,absolute64,64.128,64.656,64.651,0.528,91.964
+TS-LR,ledoit_wolf,67.157,67.157,67.157,0.0,0.0
+TS-LR,legacy,64.129,64.666,64.663,0.537,91.964
+TS-LR,oas,67.241,67.241,67.241,0.0,0.0
+TS-LR,rank_aware,67.924,67.924,67.924,0.0,0.0
+TS-LR,relative,67.924,67.924,67.924,0.0,0.0
+TS-LR,trace_loading,67.848,67.848,67.848,0.0,0.0
+TS-LR,unregularized,67.924,67.924,67.924,0.0,0.0

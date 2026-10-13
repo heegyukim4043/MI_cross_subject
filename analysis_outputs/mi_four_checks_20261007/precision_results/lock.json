@@ -1,0 +1,38 @@
+{
+  "hashes": {
+    "D:\\2.연구\\7.MI_crosssubject\\MI_test\\MI_loso_project\\mrfbcsp_loso.py": "29caaa499115464c6c14c28db0d291a39bdd90f55eadf98c127878d04012135f",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_floor_gate_20260924\\run_floor_gate.py": "9f4425928ba98873a09b985b992c31ab4bddc0ed781ccc809a5a3ce95531652f",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_budget_20260924\\run_budget_causal.py": "7ad7de5d804aa1619baef0dad81fec3e3503fea5f3a666cc80b73a35351ee40b",
+    "D:\\2.연구\\MI_crosssubject\\four_checks_20261007\\precision_compare.py": "42dd5eb1a5fb4cbf6420cf5aec3ff99cf380a5b07da014845dbaa09b6042eca2",
+    "D:\\2.연구\\MI_crosssubject\\four_checks_20261007\\EXECUTION_PLAN.md": "d5ec040fc756d8b6c674e1a6d11a0ef7749bae59ae8674624eb4a87a75d7fa6a",
+    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_unit_intervention_20260925\\results\\manifest.json": "d60d0ce7e46fc8a7878f9fff58df8788788cf4bf2956216c3ab8c94bea038626"
+  },
+  "expected_inputs": {
+    "cho2017": "9982fb2820bc8b9f6cb6273e0e60fb2e4c7cbfeef275024f75523a2a21bd4eae",
+    "lee2019": "8e7a908fec322692f3043f3d957da6cc1e6dd9e62ac4974d78e97a836c51dc1d",
+    "bnci2014001": "df821f1aac3d5372671ba9ef28a5317d7c4ec28f4858e339fe7e22173d9f4ecc",
+    "physionetmi": "fae443a5f63f10cd51f8267f76b4ddc16d2c4a9e7690f76e0bf972bc85e7f2f0"
+  },
+  "policies": [
+    "coherent_absolute",
+    "relative"
+  ],
+  "scales": [
+    [
+      "1",
+      1.0
+    ],
+    [
+      "1e-6",
+      1e-06
+    ]
+  ],
+  "fits": 32,
+  "python": "3.9.13",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "sklearn": "1.5.2",
+  "threads": 4,
+  "covariance_dtype": "float64",
+  "output_dtype": "float32"
+}
