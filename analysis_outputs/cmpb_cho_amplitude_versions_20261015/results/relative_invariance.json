@@ -1,0 +1,90 @@
+[
+  {
+    "pipeline": "subject",
+    "dataset": "cho2017",
+    "alignment_relative_error": 0.0,
+    "alignment_pass": true,
+    "arrays_byte_equal": true,
+    "max_alignment_difference": 0.0,
+    "prediction_flips": 0,
+    "n_predictions": 10520,
+    "max_decision_difference": 0.0
+  },
+  {
+    "pipeline": "subject",
+    "dataset": "lee2019",
+    "alignment_relative_error": 0.0,
+    "alignment_pass": true,
+    "arrays_byte_equal": true,
+    "max_alignment_difference": 0.0,
+    "prediction_flips": 0,
+    "n_predictions": 10800,
+    "max_decision_difference": 0.0
+  },
+  {
+    "pipeline": "subject",
+    "dataset": "bnci2014001",
+    "alignment_relative_error": 0.0,
+    "alignment_pass": true,
+    "arrays_byte_equal": true,
+    "max_alignment_difference": 0.0,
+    "prediction_flips": 0,
+    "n_predictions": 2592,
+    "max_decision_difference": 0.0
+  },
+  {
+    "pipeline": "subject",
+    "dataset": "physionetmi",
+    "alignment_relative_error": 0.0,
+    "alignment_pass": true,
+    "arrays_byte_equal": true,
+    "max_alignment_difference": 0.0,
+    "prediction_flips": 0,
+    "n_predictions": 4918,
+    "max_decision_difference": 0.0
+  },
+  {
+    "pipeline": "dataset_subject",
+    "dataset": "cho2017",
+    "alignment_relative_error": 0.0,
+    "alignment_pass": true,
+    "arrays_byte_equal": true,
+    "max_alignment_difference": 0.0,
+    "prediction_flips": 0,
+    "n_predictions": 10520,
+    "max_decision_difference": 0.0
+  },
+  {
+    "pipeline": "dataset_subject",
+    "dataset": "lee2019",
+    "alignment_relative_error": 0.0,
+    "alignment_pass": true,
+    "arrays_byte_equal": true,
+    "max_alignment_difference": 0.0,
+    "prediction_flips": 0,
+    "n_predictions": 10800,
+    "max_decision_difference": 0.0
+  },
+  {
+    "pipeline": "dataset_subject",
+    "dataset": "bnci2014001",
+    "alignment_relative_error": 0.0,
+    "alignment_pass": true,
+    "arrays_byte_equal": true,
+    "max_alignment_difference": 0.0,
+    "prediction_flips": 0,
+    "n_predictions": 2592,
+    "max_decision_difference": 0.0
+  },
+  {
+    "pipeline": "dataset_subject",
+    "dataset": "physionetmi",
+    "alignment_relative_error": 0.0,
+    "alignment_pass": true,
+    "arrays_byte_equal": true,
+    "max_alignment_difference": 0.0,
+    "prediction_flips": 0,
+    "n_predictions": 4918,
+    "max_decision_difference": 0.0
+  }
+]

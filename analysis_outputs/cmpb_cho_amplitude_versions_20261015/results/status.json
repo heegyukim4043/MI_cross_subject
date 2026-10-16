@@ -1,0 +1,15 @@
+{
+  "state": "complete",
+  "actual_fits": 32,
+  "total_fits": 32,
+  "completed_cells": 8,
+  "elapsed_seconds": 121.3605564,
+  "relative_alignment_check_pass": true,
+  "relative_prediction_flips": 0,
+  "subjects": 224,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261015,
+  "result_unit": "BAC percent; effects percentage points",
+  "equivalence_claim": false,
+  "amplitude_version_selected": false
+}

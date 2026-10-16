@@ -31,23 +31,23 @@
   ],
   "inputs": {
     "cho2017": {
-      "path": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\MI_test\\preprocessed_sfreq100\\cho2017.npz",
+      "path": "MI_test/preprocessed_sfreq100/cho2017.npz",
       "sha256": "f820119a259c48366e510239ae54a6de372a94328c3093285a5b6445ff3ad581"
     },
     "lee2019": {
-      "path": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\MI_test\\preprocessed_sfreq100\\lee2019.npz",
+      "path": "MI_test/preprocessed_sfreq100/lee2019.npz",
       "sha256": "8e7a908fec322692f3043f3d957da6cc1e6dd9e62ac4974d78e97a836c51dc1d"
     },
     "bnci2014001": {
-      "path": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\cmpb_bdea_20260924\\bnci2014001.npz",
+      "path": "analysis_outputs/cmpb_bdea_20260924/bnci2014001.npz",
       "sha256": "df821f1aac3d5372671ba9ef28a5317d7c4ec28f4858e339fe7e22173d9f4ecc"
     },
     "physionetmi": {
-      "path": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\cmpb_bdea_20260924\\physionetmi.npz",
+      "path": "analysis_outputs/cmpb_bdea_20260924/physionetmi.npz",
       "sha256": "fae443a5f63f10cd51f8267f76b4ddc16d2c4a9e7690f76e0bf972bc85e7f2f0"
     },
     "dreyer2023": {
-      "path": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\cmpb_confirmation_dreyer2023\\dreyer2023.npz",
+      "path": "analysis_outputs/cmpb_confirmation_dreyer2023/dreyer2023.npz",
       "sha256": "9b5ef988bc7dd8ac39a89afa7dfa494f1e780e1036d17db10ee98b66e2d95816"
     }
   },
@@ -55,5 +55,10 @@
     "split": "class-stratified half split; seed=subject+7919, matching the existing development analysis",
     "h6_draws": "3 draws, matching the existing development label-curve analysis",
     "ea": "audited run_floor_gate.apply_alignment with floor mode passed explicitly"
+  },
+  "_anonymous_export": {
+    "paths": "Identifying prefixes replaced by relative/generic locations.",
+    "historical_hashes": "Refer to pre-anonymization originals, not a newly frozen anonymous run.",
+    "current_integrity": "Use root SHA256SUMS for distributed file hashes."
   }
 }

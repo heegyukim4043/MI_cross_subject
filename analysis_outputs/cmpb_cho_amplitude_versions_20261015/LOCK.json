@@ -1,0 +1,127 @@
+{
+  "frozen_utc": "2026-10-15T16:34:42.427057+00:00",
+  "config": {
+    "analysis_id": "cmpb_cho_amplitude_versions_20261015",
+    "client_date": "2026-10-15",
+    "versions": [
+      "adopted",
+      "original"
+    ],
+    "policies": [
+      "absolute",
+      "relative"
+    ],
+    "pipelines": [
+      "subject",
+      "dataset_subject"
+    ],
+    "raw_absolute_floor": 1e-08,
+    "post_D_absolute_floor": 1e-08,
+    "relative_coefficient": 1e-08,
+    "adopted_over_original": 0.03125,
+    "amplitude_audit_relative_tolerance": 1e-06,
+    "relative_alignment_tolerance": 1e-05,
+    "threads": 4,
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20261015,
+    "primary_aggregation": "equal weight of the four fixed dataset means",
+    "primary_family": [
+      "K_adopted",
+      "K_original",
+      "K_original_minus_adopted"
+    ],
+    "target_label_parameter_selection": false,
+    "new_neural_training": false,
+    "manuscript_editing": false
+  },
+  "conditions": [
+    {
+      "id": "adopted_absolute_subject",
+      "version": "adopted",
+      "policy": "absolute",
+      "pipeline": "subject"
+    },
+    {
+      "id": "adopted_absolute_dataset_subject",
+      "version": "adopted",
+      "policy": "absolute",
+      "pipeline": "dataset_subject"
+    },
+    {
+      "id": "adopted_relative_subject",
+      "version": "adopted",
+      "policy": "relative",
+      "pipeline": "subject"
+    },
+    {
+      "id": "adopted_relative_dataset_subject",
+      "version": "adopted",
+      "policy": "relative",
+      "pipeline": "dataset_subject"
+    },
+    {
+      "id": "original_absolute_subject",
+      "version": "original",
+      "policy": "absolute",
+      "pipeline": "subject"
+    },
+    {
+      "id": "original_absolute_dataset_subject",
+      "version": "original",
+      "policy": "absolute",
+      "pipeline": "dataset_subject"
+    },
+    {
+      "id": "original_relative_subject",
+      "version": "original",
+      "policy": "relative",
+      "pipeline": "subject"
+    },
+    {
+      "id": "original_relative_dataset_subject",
+      "version": "original",
+      "policy": "relative",
+      "pipeline": "dataset_subject"
+    }
+  ],
+  "code_hashes": {
+    "analysis_outputs/cmpb_cho_amplitude_versions_20261015/config.json": "e287a7e016a7aa8266ba44cee973d2c1b226f9b55589d112a0fe065935ae3820",
+    "analysis_outputs/cmpb_cho_amplitude_versions_20261015/PROTOCOL.md": "f8676e0598368d4918a8c0612242748d18d4a847265f50480efa3132039cb755",
+    "analysis_outputs/cmpb_cho_amplitude_versions_20261015/study.py": "5845166f81871c45ac63ee4d474fc3aa78e350866b94045c09386bc0bc5c8295",
+    "analysis_outputs/cmpb_cho_amplitude_versions_20261015/test_study.py": "b10abfda621a1389214a29b5fb4159750104732d42a7f6f9f37db119d1de60ec",
+    "analysis_outputs/cmpb_cho_amplitude_versions_20261015/analyze.py": "cacee10a843fdf962522d808b0da95f42724c667e4d263ba4602bec685dc7281",
+    "analysis_outputs/cmpb_cho_amplitude_versions_20261015/verify.py": "71ae6f07a51279115a23ad3a6bfa7767274a2d0a2a435047e5a392565d588290",
+    "MI_test/MI_loso_project/mrfbcsp_loso.py": "29caaa499115464c6c14c28db0d291a39bdd90f55eadf98c127878d04012135f",
+    "analysis_outputs/cmpb_floor_gate_20260924/run_floor_gate.py": "9f4425928ba98873a09b985b992c31ab4bddc0ed781ccc809a5a3ce95531652f",
+    "analysis_outputs/cmpb_budget_20260924/run_budget_causal.py": "7ad7de5d804aa1619baef0dad81fec3e3503fea5f3a666cc80b73a35351ee40b",
+    "analysis_outputs/mi_four_checks_20261007/precision_compare.py": "42dd5eb1a5fb4cbf6420cf5aec3ff99cf380a5b07da014845dbaa09b6042eca2",
+    "analysis_outputs/cmpb_absolute_floor_sweep_20261015/study.py": "de712f93e640d70723716a69c0645a7b834df00341f1525b44c99f3d70796e80",
+    "analysis_outputs/cmpb_chofix_20260929/backup_pre_chofix/cmpb_unit_intervention_20260925/results/manifest.json": "394654278c3d8277f02e7a0f869b62d4dc2a508560f79fd33d68c8f447e33892",
+    "analysis_outputs/cmpb_unit_intervention_20260925/results/manifest.json": "d60d0ce7e46fc8a7878f9fff58df8788788cf4bf2956216c3ab8c94bea038626"
+  },
+  "input_hashes": {
+    "cho2017": "9982fb2820bc8b9f6cb6273e0e60fb2e4c7cbfeef275024f75523a2a21bd4eae",
+    "lee2019": "8e7a908fec322692f3043f3d957da6cc1e6dd9e62ac4974d78e97a836c51dc1d",
+    "bnci2014001": "df821f1aac3d5372671ba9ef28a5317d7c4ec28f4858e339fe7e22173d9f4ecc",
+    "physionetmi": "fae443a5f63f10cd51f8267f76b4ddc16d2c4a9e7690f76e0bf972bc85e7f2f0",
+    "cho_original": "f820119a259c48366e510239ae54a6de372a94328c3093285a5b6445ff3ad581"
+  },
+  "anchor_hashes": {
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_coherent_absolute_subject_1.npz": "51274a5279eb5b358c3233e478ac492f0ec54d94435cf5133d779680b59274df",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_coherent_absolute_dataset_subject_1.npz": "b7879ae67ac4e092e7af7f48be38368a8d36027ab1ebb8f7452eb05ea4a96555",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_relative_subject_1.npz": "ce57a58f11ce76e7ba26ba8c9947da1ecac09f1398193bcb0c79c1f8a7f0aa3a",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_relative_dataset_subject_1.npz": "40893e83c396766467515823d0a1eddd2b16bd59d2818c49885d691b7b063db1"
+  },
+  "python": "3.9.13",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "sklearn": "1.5.2",
+  "maximum_fits": 32,
+  "synthetic_tests_passed": true,
+  "note": "Exploratory version sensitivity; freeze precedes EEG array loading, not prior studies",
+  "_anonymous_export": {
+    "paths": "Identifying prefixes replaced by relative/generic locations.",
+    "historical_hashes": "Refer to pre-anonymization originals, not a newly frozen anonymous run.",
+    "current_integrity": "Use root SHA256SUMS for distributed file hashes."
+  }
+}

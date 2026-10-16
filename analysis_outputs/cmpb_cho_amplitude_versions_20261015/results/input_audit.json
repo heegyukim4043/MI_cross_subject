@@ -1,0 +1,16 @@
+{
+  "used_shape": [
+    10520,
+    21,
+    200
+  ],
+  "n_subjects": 52,
+  "labels_subjects_order_equal": true,
+  "channel_sample_contract_equal": true,
+  "adopted_over_original": 0.03125,
+  "amplitude_relative_error": 0.0,
+  "used_arrays_bitwise_scaled_equal": true,
+  "amplitude_check_pass": true,
+  "original_file": "retained archive, not reconstructed",
+  "physical_scaling_validated": false
+}

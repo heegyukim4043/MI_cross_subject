@@ -1,0 +1,14 @@
+{
+  "subject_BACs_recomputed_with_sklearn": 1792,
+  "all_summary_rows_verified": 24,
+  "all_K_rows_verified": 18,
+  "all_version_change_rows_verified": 24,
+  "all_bootstrap_draws_recomputed_from_saved_indices": true,
+  "all_pointwise_CIs_verified": true,
+  "anchors_reproduced": 16,
+  "relative_controls": 8,
+  "source_and_input_hashes_unchanged": true,
+  "raw_EEG_pipeline_independently_retrained": false,
+  "physical_scaling_validated": false,
+  "primary_simultaneous_bands_checked_separately": true
+}
