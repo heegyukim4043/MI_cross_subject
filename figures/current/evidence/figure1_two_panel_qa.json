@@ -102,10 +102,10 @@
     }
   },
   "sources_sha256": {
-    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_paired_policy_ci_20261007\\results\\bootstrap_summary.csv": "14e0d5ee53efb46fcf52a71decc6f577001af7502884d80bd35c526fdd5a53c3",
-    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_paired_policy_ci_20261007\\results\\aggregate_bootstrap_draws.npz": "9df12f242475de9013daf40f81d38058eaddcd5b02ddeb748a5f19edfe3edeaf",
-    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_paired_policy_ci_20261007\\PROTOCOL.md": "15254dec3f757e4869b0f805470322092eb0eb88a702b62c027baa3a63b48ddb",
-    "D:\\2.연구\\7.MI_crosssubject\\analysis_outputs\\cmpb_paired_policy_ci_20261007\\analyze.py": "6c49330ce69efbfc0fe980ab2fa34e0a79805c1552d6d954a891cd5fcadee617"
+    "analysis_outputs/cmpb_paired_policy_ci_20261007/results/bootstrap_summary.csv": "14e0d5ee53efb46fcf52a71decc6f577001af7502884d80bd35c526fdd5a53c3",
+    "analysis_outputs/cmpb_paired_policy_ci_20261007/results/aggregate_bootstrap_draws.npz": "9df12f242475de9013daf40f81d38058eaddcd5b02ddeb748a5f19edfe3edeaf",
+    "analysis_outputs/cmpb_paired_policy_ci_20261007/PROTOCOL.md": "15254dec3f757e4869b0f805470322092eb0eb88a702b62c027baa3a63b48ddb",
+    "analysis_outputs/cmpb_paired_policy_ci_20261007/analyze.py": "6c49330ce69efbfc0fe980ab2fa34e0a79805c1552d6d954a891cd5fcadee617"
   },
   "exports_sha256": {
     "Figure_1_bar.pdf": "08f038c1a32ed6935a5712e0a47eb6d2ae8183468e89c329e5dfb74312fa14ee",
@@ -116,5 +116,10 @@
     "pages": 1,
     "raster_images": 0,
     "text_bounds_ok": true
+  },
+  "_anonymous_export": {
+    "paths": "Identifying prefixes replaced by relative/generic locations.",
+    "historical_hashes": "Refer to pre-anonymization originals, not a newly frozen anonymous run.",
+    "current_integrity": "Use root SHA256SUMS for distributed file hashes."
   }
 }
