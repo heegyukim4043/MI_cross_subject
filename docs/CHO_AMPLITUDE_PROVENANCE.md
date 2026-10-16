@@ -1,6 +1,7 @@
 # Cho2017 amplitude provenance
 
-Status: 2026-10-12. Physical calibration remains unresolved.
+Status: 2026-10-16. Physical calibration remains unresolved; both amplitude
+versions now have matched development and post-hoc Dreyer sensitivity results.
 
 ## Evidence contract
 
@@ -58,10 +59,20 @@ confused with MOABB's ndarray output path, which can apply the dataset unit fact
 The actual API path and installed version belong in each data contract. A V
 convention does not itself verify the original Cho acquisition/export calibration.
 
-The later development analyses use the adopted scaled version. The original
-Dreyer pre-specified confirmation used the original Cho source version; its later
-amplitude sensitivity and post-hoc policy extension are distinct analyses.
-Do not retrospectively relabel or overwrite the original confirmation.
+The initial matched development comparison and initial post-hoc Dreyer policy
+extension use adopted Cho. The pre-specified Dreyer confirmation used original
+Cho and must not be relabeled or overwritten. The 15 October follow-ups compare
+both retained versions in all four development LODO folds and as source inputs
+for Dreyer. Their protocols, version checks, predictions, scores and paired
+intervals are in the separate version-sensitivity folders in RESULT_FILE_MAP.md.
+
+Development K is +4.43 pp with adopted Cho and +2.75 with original Cho; Dreyer K
+is +2.98 and +3.45, respectively. The direction persists, while the version's
+effect on magnitude differs across evaluations. These findings establish input
+version sensitivity, not which version has the correct physical calibration.
+The Cho-only intervention retains numerical constants and is not a coherent
+global unit conversion. Relative-policy invariance is an implementation control,
+not acquisition-provenance evidence. No version was selected by target accuracy.
 
 Subject-wise relative EA is invariant to a positive global scalar in exact
 arithmetic. Numerical tolerance and rank handling still matter. This property
