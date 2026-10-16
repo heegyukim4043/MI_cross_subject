@@ -6,19 +6,24 @@
   "rng": "PCG64",
   "status": "exploratory_after_point_estimates",
   "hashes": {
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\predictions_coherent_absolute_subject_1.npz": "51274a5279eb5b358c3233e478ac492f0ec54d94435cf5133d779680b59274df",
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\predictions_coherent_absolute_dataset_subject_1.npz": "b7879ae67ac4e092e7af7f48be38368a8d36027ab1ebb8f7452eb05ea4a96555",
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\predictions_relative_subject_1.npz": "ce57a58f11ce76e7ba26ba8c9947da1ecac09f1398193bcb0c79c1f8a7f0aa3a",
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\predictions_relative_dataset_subject_1.npz": "40893e83c396766467515823d0a1eddd2b16bd59d2818c49885d691b7b063db1",
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\predictions_coherent_absolute_subject_1e-6.npz": "3266012925fd51b4294b86f8dce8a8d8aa596c229267ea4575da46e956ebd8ed",
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\predictions_coherent_absolute_dataset_subject_1e-6.npz": "0fcdd84a8f50d41d642d87d2c329eb88a5985d47e0633d5ce30926ac9704d10a",
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\predictions_relative_subject_1e-6.npz": "14cbc22ea10e4c3d1c58893965df4f51fbe576a274b527ac7756b1c9e099b14b",
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\predictions_relative_dataset_subject_1e-6.npz": "272e0dc67e74693454ca77c01e5da04176f9ffcf269874a94f4d8f13b0a4f4c0",
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\subject_results.csv": "31967b7792f48cafcdbb19a33c5726edda12b9278930c795fc6670704017f596",
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\comparison.csv": "eceab4433a1c0a012ca5f5a66dbeee9ca3657457fa38d04eefb730657ff7f53b",
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\diagnostics.csv": "107e9ca78b6b91cdd22004b286fd2e97c418f999f71fdc7344226f540b99855b",
-    "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\mi_four_checks_20261007\\precision_results\\lock.json": "2ac69aa06022fed017eae59b98abf6a4de10aec17a6e90a6aa8e32299e23fbcc",
-    "D:\\2.\uc5f0\uad6c\\MI_crosssubject\\paired_policy_ci_20261007\\PROTOCOL.md": "15254dec3f757e4869b0f805470322092eb0eb88a702b62c027baa3a63b48ddb",
-    "D:\\2.\uc5f0\uad6c\\MI_crosssubject\\paired_policy_ci_20261007\\analyze.py": "6c49330ce69efbfc0fe980ab2fa34e0a79805c1552d6d954a891cd5fcadee617"
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_coherent_absolute_subject_1.npz": "51274a5279eb5b358c3233e478ac492f0ec54d94435cf5133d779680b59274df",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_coherent_absolute_dataset_subject_1.npz": "b7879ae67ac4e092e7af7f48be38368a8d36027ab1ebb8f7452eb05ea4a96555",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_relative_subject_1.npz": "ce57a58f11ce76e7ba26ba8c9947da1ecac09f1398193bcb0c79c1f8a7f0aa3a",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_relative_dataset_subject_1.npz": "40893e83c396766467515823d0a1eddd2b16bd59d2818c49885d691b7b063db1",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_coherent_absolute_subject_1e-6.npz": "3266012925fd51b4294b86f8dce8a8d8aa596c229267ea4575da46e956ebd8ed",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_coherent_absolute_dataset_subject_1e-6.npz": "0fcdd84a8f50d41d642d87d2c329eb88a5985d47e0633d5ce30926ac9704d10a",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_relative_subject_1e-6.npz": "14cbc22ea10e4c3d1c58893965df4f51fbe576a274b527ac7756b1c9e099b14b",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/predictions_relative_dataset_subject_1e-6.npz": "272e0dc67e74693454ca77c01e5da04176f9ffcf269874a94f4d8f13b0a4f4c0",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/subject_results.csv": "31967b7792f48cafcdbb19a33c5726edda12b9278930c795fc6670704017f596",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/comparison.csv": "eceab4433a1c0a012ca5f5a66dbeee9ca3657457fa38d04eefb730657ff7f53b",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/diagnostics.csv": "107e9ca78b6b91cdd22004b286fd2e97c418f999f71fdc7344226f540b99855b",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/lock.json": "2ac69aa06022fed017eae59b98abf6a4de10aec17a6e90a6aa8e32299e23fbcc",
+    "analysis_outputs/cmpb_paired_policy_ci_20261007/PROTOCOL.md": "15254dec3f757e4869b0f805470322092eb0eb88a702b62c027baa3a63b48ddb",
+    "analysis_outputs/cmpb_paired_policy_ci_20261007/analyze.py": "6c49330ce69efbfc0fe980ab2fa34e0a79805c1552d6d954a891cd5fcadee617"
+  },
+  "_anonymous_export": {
+    "paths": "Identifying prefixes replaced by relative/generic locations.",
+    "historical_hashes": "Refer to pre-anonymization originals, not a newly frozen anonymous run.",
+    "current_integrity": "Use root SHA256SUMS for distributed file hashes."
   }
 }

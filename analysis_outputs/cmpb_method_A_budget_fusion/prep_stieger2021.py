@@ -18,7 +18,7 @@ HERE = Path(__file__).resolve().parent
 PARTS = HERE / "sealed_stieger2021" / "parts"
 OUT = HERE / "sealed_stieger2021" / "stieger2021_s21_s62_session1.npz"
 SUBJECTS = list(range(21, 63))
-LOCAL = Path(r"D:\mne_data\stieger2021_session1")
+LOCAL = (Path(__file__).resolve().parents[2] / 'data/stieger2021_session1')
 
 
 def local_data_path(self, subject, *args, **kwargs):

@@ -50,7 +50,7 @@ sealed data are loaded.
 ## Sealed test
 - Dataset: MOABB `Stieger2021`, session 1 only, left- vs right-hand trials, subjects S21-S62.
 - S1-S20 are excluded because they were already analyzed (including classification) in another project
-  (`D:\2.연구\8.MI_selfpaced`). S21-S62 have not been downloaded or inspected before this design.
+  (`external_inputs/prior_data_archive`). S21-S62 have not been downloaded or inspected before this design.
 - Before freezing, only label-free checks are allowed: file integrity, channel names, units, trial counts.
 - Exclusion: subjects with fewer than 60 left/right trials in session 1 (count recorded before scoring).
 

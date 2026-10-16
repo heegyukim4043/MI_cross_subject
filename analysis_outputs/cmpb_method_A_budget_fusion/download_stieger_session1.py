@@ -7,7 +7,7 @@ from pathlib import Path
 
 import requests
 
-DEST = Path(r"D:\mne_data\stieger2021_session1")
+DEST = (Path(__file__).resolve().parents[2] / 'data/stieger2021_session1')
 WANT = {f"S{s}_Session_1.mat" for s in range(21, 63)}
 
 

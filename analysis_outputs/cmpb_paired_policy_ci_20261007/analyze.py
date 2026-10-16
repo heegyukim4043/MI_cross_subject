@@ -10,7 +10,7 @@ import pandas as pd
 from sklearn.metrics import balanced_accuracy_score
 
 HERE=Path(__file__).resolve().parent
-ROOT=Path('D:/2.연구/7.MI_crosssubject')
+ROOT=Path(__file__).resolve().parents[2]
 SRC=ROOT/'analysis_outputs/mi_four_checks_20261007/precision_results'
 DATASETS=['cho2017','lee2019','bnci2014001','physionetmi']
 COUNTS=[52,54,9,109]

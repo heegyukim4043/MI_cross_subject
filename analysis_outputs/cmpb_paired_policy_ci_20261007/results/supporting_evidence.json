@@ -1,6 +1,6 @@
 {
   "deterioration": {
-    "file": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\cmpb_rq_strengthening_20260928\\rq1_robustness.csv",
+    "file": "analysis_outputs/cmpb_rq_strengthening_20260928/rq1_robustness.csv",
     "sha256": "5f4137a331b1d747bbc68a2eabfb78922d9509f7ec7341a8e550b7655d4f183e",
     "supplement": "S6.3 / Table S6.3",
     "rows": [
@@ -57,7 +57,7 @@
     ]
   },
   "prediction_changes": {
-    "file": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\cmpb_unit_intervention_20260925\\analysis\\prediction_disagreement.csv",
+    "file": "analysis_outputs/cmpb_unit_intervention_20260925/analysis/prediction_disagreement.csv",
     "sha256": "59ea2ce924cf119ba41f8985ab35a79012336865a3d88e18beae1b35be5bb4a0",
     "supplement": "S8 / Table S8.2",
     "maximum_row": {
@@ -71,6 +71,11 @@
       "disagreement_rate": 0.3521756811712078
     }
   },
-  "audit_protocol": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\ea_implementation_audit_20260924\\AUDIT_PROTOCOL.md",
-  "audit_results": "D:\\2.\uc5f0\uad6c\\7.MI_crosssubject\\analysis_outputs\\ea_implementation_audit_20260924\\AUDIT_RESULTS.md"
+  "audit_protocol": "analysis_outputs/ea_implementation_audit_20260924/AUDIT_PROTOCOL.md",
+  "audit_results": "analysis_outputs/ea_implementation_audit_20260924/AUDIT_RESULTS.md",
+  "_anonymous_export": {
+    "paths": "Identifying prefixes replaced by relative/generic locations.",
+    "historical_hashes": "Refer to pre-anonymization originals, not a newly frozen anonymous run.",
+    "current_integrity": "Use root SHA256SUMS for distributed file hashes."
+  }
 }
