@@ -1,0 +1,21 @@
+{
+  "analysis_id": "cmpb_analysis_closure_20261015",
+  "client_date": "2026-10-15",
+  "versions": ["adopted", "original"],
+  "policies": ["absolute", "relative"],
+  "pipelines": ["subject", "dataset_subject"],
+  "raw_absolute_floor": 1e-8,
+  "post_D_absolute_floor": 1e-8,
+  "relative_coefficient": 1e-8,
+  "amplitude_factor": 0.03125,
+  "amplitude_relation_tolerance": 1e-6,
+  "relative_alignment_tolerance": 1e-5,
+  "threads": 4,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261015,
+  "primary_family": ["K_adopted", "K_original", "K_original_minus_adopted"],
+  "target_labels_before_prediction_freeze": false,
+  "optimize_version_or_parameter": false,
+  "additional_experiments_after_this": false,
+  "manuscript_edits": false
+}

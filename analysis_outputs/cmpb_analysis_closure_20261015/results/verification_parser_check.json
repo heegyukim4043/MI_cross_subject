@@ -1,0 +1,10 @@
+{
+  "default": {
+    "mismatched_elements": 92,
+    "maximum_difference": 1.4210854715202004e-14
+  },
+  "round_trip": {
+    "mismatched_elements": 0,
+    "maximum_difference": 0.0
+  }
+}

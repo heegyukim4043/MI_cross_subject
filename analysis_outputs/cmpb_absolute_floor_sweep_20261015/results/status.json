@@ -1,0 +1,16 @@
+{
+  "state": "complete",
+  "completed_conditions": 31,
+  "total_conditions": 31,
+  "actual_fits": 52,
+  "reused_conditions": 18,
+  "elapsed_seconds": 340.2613742,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261015,
+  "subjects": 224,
+  "anchor_prediction_checks": 16,
+  "simultaneous_family_columns": 20,
+  "simultaneous_critical_value": 2.695948689001632,
+  "result_unit": "percentage points; BAC levels percent",
+  "new_epsilon_selected": false
+}

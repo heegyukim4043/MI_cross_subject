@@ -1,0 +1,16 @@
+{
+  "state": "complete",
+  "completed_fits": 8,
+  "total_fits": 8,
+  "target_labels_read_after_prediction_freeze": true,
+  "target_subjects": 87,
+  "source_subjects": 224,
+  "elapsed_seconds": 90.3929869,
+  "relative_alignment_pass": true,
+  "relative_prediction_flips": 0,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261015,
+  "unit": "BAC percent; effects percentage points",
+  "version_selected": false,
+  "scope_execution_complete": true
+}

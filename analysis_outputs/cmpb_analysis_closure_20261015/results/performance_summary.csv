@@ -1,0 +1,9 @@
+id,version,policy,pipeline,n_subjects,bac_pct,ci_low,ci_high
+adopted_absolute_subject,adopted,absolute,subject,87,65.22954113561714,62.55473270649839,67.95019157088122
+adopted_absolute_dataset_subject,adopted,absolute,dataset_subject,87,68.29850323500153,65.50239298049087,71.08934902855962
+adopted_relative_subject,adopted,relative,subject,87,68.36513008363491,65.58664261990697,71.13899121098092
+adopted_relative_dataset_subject,adopted,relative,dataset_subject,87,68.45843971413046,65.72969600725952,71.19731800766284
+original_absolute_subject,original,absolute,subject,87,64.82056891937617,62.255862212088275,67.44291767707064
+original_absolute_dataset_subject,original,absolute,dataset_subject,87,68.36068259729782,65.57555706795726,71.14002634099619
+original_relative_subject,original,relative,subject,87,68.36513008363491,65.58664261990697,71.13899121098092
+original_relative_dataset_subject,original,relative,dataset_subject,87,68.45843971413046,65.72969600725952,71.19731800766284

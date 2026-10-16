@@ -1,0 +1,35 @@
+{
+  "cho_used_shape": [
+    10520,
+    18,
+    200
+  ],
+  "cho_amplitude_relative_error": 0.0,
+  "matched_labels_subjects_channels": true,
+  "cho_exact_binary_relation": true,
+  "source_subjects": 224,
+  "target_subjects": 87,
+  "target_trials": 20792,
+  "channels": [
+    "FC3",
+    "FC1",
+    "C1",
+    "C3",
+    "C5",
+    "CP3",
+    "CP1",
+    "Pz",
+    "CPz",
+    "Fz",
+    "FC4",
+    "FC2",
+    "Cz",
+    "C2",
+    "C4",
+    "C6",
+    "CP4",
+    "CP2"
+  ],
+  "target_labels_read": false,
+  "physical_calibration_validated": false
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "pipeline": "subject",
+    "dataset": "cho2017",
+    "relative_error": 0.0,
+    "byte_equal": true,
+    "pass_tolerance": true
+  },
+  {
+    "pipeline": "subject",
+    "dataset": "lee2019",
+    "relative_error": 0.0,
+    "byte_equal": true,
+    "pass_tolerance": true
+  },
+  {
+    "pipeline": "subject",
+    "dataset": "bnci2014001",
+    "relative_error": 0.0,
+    "byte_equal": true,
+    "pass_tolerance": true
+  },
+  {
+    "pipeline": "subject",
+    "dataset": "physionetmi",
+    "relative_error": 0.0,
+    "byte_equal": true,
+    "pass_tolerance": true
+  },
+  {
+    "pipeline": "subject",
+    "dataset": "dreyer2023",
+    "relative_error": 0.0,
+    "byte_equal": true,
+    "pass_tolerance": true
+  },
+  {
+    "pipeline": "subject",
+    "dataset": "prediction",
+    "prediction_flips": 0,
+    "max_decision_difference": 0.0
+  },
+  {
+    "pipeline": "dataset_subject",
+    "dataset": "cho2017",
+    "relative_error": 0.0,
+    "byte_equal": true,
+    "pass_tolerance": true
+  },
+  {
+    "pipeline": "dataset_subject",
+    "dataset": "lee2019",
+    "relative_error": 0.0,
+    "byte_equal": true,
+    "pass_tolerance": true
+  },
+  {
+    "pipeline": "dataset_subject",
+    "dataset": "bnci2014001",
+    "relative_error": 0.0,
+    "byte_equal": true,
+    "pass_tolerance": true
+  },
+  {
+    "pipeline": "dataset_subject",
+    "dataset": "physionetmi",
+    "relative_error": 0.0,
+    "byte_equal": true,
+    "pass_tolerance": true
+  },
+  {
+    "pipeline": "dataset_subject",
+    "dataset": "dreyer2023",
+    "relative_error": 0.0,
+    "byte_equal": true,
+    "pass_tolerance": true
+  },
+  {
+    "pipeline": "dataset_subject",
+    "dataset": "prediction",
+    "prediction_flips": 0,
+    "max_decision_difference": 0.0
+  }
+]

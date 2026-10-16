@@ -1,0 +1,22 @@
+[
+  {
+    "condition": "adopted_absolute_subject",
+    "predictions_equal": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "adopted_absolute_dataset_subject",
+    "predictions_equal": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "adopted_relative_subject",
+    "predictions_equal": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "adopted_relative_dataset_subject",
+    "predictions_equal": true,
+    "max_decision_difference": 0.0
+  }
+]

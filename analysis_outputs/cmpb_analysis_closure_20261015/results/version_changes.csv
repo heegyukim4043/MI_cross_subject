@@ -1,0 +1,5 @@
+policy,pipeline,original_minus_adopted_pp,ci_low,ci_high
+absolute,subject,-0.4089722162409686,-1.2423271247962366,0.4262452107279495
+absolute,dataset_subject,0.062179362296291174,-0.028897980388364886,0.15325670498086197
+relative,subject,0.0,0.0,0.0
+relative,dataset_subject,0.0,0.0,0.0

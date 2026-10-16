@@ -1,0 +1,22 @@
+{
+  "analysis_id": "cmpb_absolute_floor_sweep_20261015",
+  "client_date": "2026-10-15",
+  "scope": "coauthor item1 only; exploratory within-operator absolute-floor sensitivity",
+  "epsilon_labels": ["0", "1e-14", "1e-13", "1e-12", "1e-11", "1e-10", "1e-9", "1e-8", "1e-7", "1e-6"],
+  "primary_post_dataset_epsilon": 1e-8,
+  "secondary": "D->S with post-D dimensionless epsilon equal to raw epsilon's numerical value; S shared with primary",
+  "relative_control_coefficient": 1e-8,
+  "threads": 4,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261015,
+  "anchor_absolute_epsilon": "1e-8",
+  "datasets": ["cho2017", "lee2019", "bnci2014001", "physionetmi"],
+  "covariance_dtype": "float64",
+  "aligned_dtype": "float32",
+  "inputs": "unchanged adopted Cho amplitude version; archived primary-comparison input hashes",
+  "primary_aggregation": "equal weight of four fixed dataset means",
+  "secondary_aggregation": "equal subject weight",
+  "target_label_parameter_selection": false,
+  "new_neural_training": false,
+  "manuscript_editing": false
+}

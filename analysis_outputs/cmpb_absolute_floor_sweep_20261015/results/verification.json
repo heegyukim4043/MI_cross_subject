@@ -1,0 +1,16 @@
+{
+  "subject_BACs_recomputed_with_sklearn": 6944,
+  "summary_rows_verified": 126,
+  "all_increment_CIs_verified_from_saved_joint_draws": true,
+  "cached_predictions_byte_equivalent": true,
+  "locked_source_hashes_unchanged": true,
+  "subject_counts": {
+    "bnci2014001": 9,
+    "cho2017": 52,
+    "lee2019": 54,
+    "physionetmi": 109
+  },
+  "manuscript_or_existing_results_modified": false,
+  "raw_EEG_model_pipeline_reexecuted_by_verifier": false,
+  "visual_review": "PNG inspected: four panels legible; no observed label/legend clipping or overlap. Supporting curves coincide and are intentionally overplotted. Not a journal-layout certification."
+}

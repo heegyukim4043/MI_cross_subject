@@ -1,0 +1,98 @@
+[
+  {
+    "condition": "relative_subject",
+    "dataset": "cho2017",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "relative_subject",
+    "dataset": "lee2019",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "relative_subject",
+    "dataset": "bnci2014001",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "relative_subject",
+    "dataset": "physionetmi",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "relative_dataset_subject",
+    "dataset": "cho2017",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "relative_dataset_subject",
+    "dataset": "lee2019",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "relative_dataset_subject",
+    "dataset": "bnci2014001",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "relative_dataset_subject",
+    "dataset": "physionetmi",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "fixed_1e-8_subject",
+    "dataset": "cho2017",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "fixed_1e-8_subject",
+    "dataset": "lee2019",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "fixed_1e-8_subject",
+    "dataset": "bnci2014001",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "fixed_1e-8_subject",
+    "dataset": "physionetmi",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "fixed_1e-8_dataset_subject",
+    "dataset": "cho2017",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "fixed_1e-8_dataset_subject",
+    "dataset": "lee2019",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "fixed_1e-8_dataset_subject",
+    "dataset": "bnci2014001",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  },
+  {
+    "condition": "fixed_1e-8_dataset_subject",
+    "dataset": "physionetmi",
+    "predictions_identical": true,
+    "max_decision_difference": 0.0
+  }
+]

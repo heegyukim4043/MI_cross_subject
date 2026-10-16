@@ -1,0 +1,174 @@
+{
+  "created_utc": "2026-10-15T17:02:30.430644+00:00",
+  "config": {
+    "analysis_id": "cmpb_analysis_closure_20261015",
+    "client_date": "2026-10-15",
+    "versions": [
+      "adopted",
+      "original"
+    ],
+    "policies": [
+      "absolute",
+      "relative"
+    ],
+    "pipelines": [
+      "subject",
+      "dataset_subject"
+    ],
+    "raw_absolute_floor": 1e-08,
+    "post_D_absolute_floor": 1e-08,
+    "relative_coefficient": 1e-08,
+    "amplitude_factor": 0.03125,
+    "amplitude_relation_tolerance": 1e-06,
+    "relative_alignment_tolerance": 1e-05,
+    "threads": 4,
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20261015,
+    "primary_family": [
+      "K_adopted",
+      "K_original",
+      "K_original_minus_adopted"
+    ],
+    "target_labels_before_prediction_freeze": false,
+    "optimize_version_or_parameter": false,
+    "additional_experiments_after_this": false,
+    "manuscript_edits": false
+  },
+  "conditions": [
+    {
+      "id": "adopted_absolute_subject",
+      "version": "adopted",
+      "policy": "absolute",
+      "pipeline": "subject"
+    },
+    {
+      "id": "adopted_absolute_dataset_subject",
+      "version": "adopted",
+      "policy": "absolute",
+      "pipeline": "dataset_subject"
+    },
+    {
+      "id": "adopted_relative_subject",
+      "version": "adopted",
+      "policy": "relative",
+      "pipeline": "subject"
+    },
+    {
+      "id": "adopted_relative_dataset_subject",
+      "version": "adopted",
+      "policy": "relative",
+      "pipeline": "dataset_subject"
+    },
+    {
+      "id": "original_absolute_subject",
+      "version": "original",
+      "policy": "absolute",
+      "pipeline": "subject"
+    },
+    {
+      "id": "original_absolute_dataset_subject",
+      "version": "original",
+      "policy": "absolute",
+      "pipeline": "dataset_subject"
+    },
+    {
+      "id": "original_relative_subject",
+      "version": "original",
+      "policy": "relative",
+      "pipeline": "subject"
+    },
+    {
+      "id": "original_relative_dataset_subject",
+      "version": "original",
+      "policy": "relative",
+      "pipeline": "dataset_subject"
+    }
+  ],
+  "inputs": {
+    "cho2017": {
+      "path": "MI_test/preprocessed_sfreq100/cho2017.npz",
+      "sha256": "9982fb2820bc8b9f6cb6273e0e60fb2e4c7cbfeef275024f75523a2a21bd4eae"
+    },
+    "lee2019": {
+      "path": "MI_test/preprocessed_sfreq100/lee2019.npz",
+      "sha256": "8e7a908fec322692f3043f3d957da6cc1e6dd9e62ac4974d78e97a836c51dc1d"
+    },
+    "bnci2014001": {
+      "path": "analysis_outputs/cmpb_bdea_20260924/bnci2014001.npz",
+      "sha256": "df821f1aac3d5372671ba9ef28a5317d7c4ec28f4858e339fe7e22173d9f4ecc"
+    },
+    "physionetmi": {
+      "path": "analysis_outputs/cmpb_bdea_20260924/physionetmi.npz",
+      "sha256": "fae443a5f63f10cd51f8267f76b4ddc16d2c4a9e7690f76e0bf972bc85e7f2f0"
+    },
+    "dreyer2023": {
+      "path": "analysis_outputs/cmpb_confirmation_dreyer2023/dreyer2023.npz",
+      "sha256": "9b5ef988bc7dd8ac39a89afa7dfa494f1e780e1036d17db10ee98b66e2d95816"
+    },
+    "cho_original": {
+      "path": "MI_test/preprocessed_sfreq100/cho2017_moabb_uncorrected.npz",
+      "sha256": "f820119a259c48366e510239ae54a6de372a94328c3093285a5b6445ff3ad581"
+    }
+  },
+  "channels": [
+    "FC3",
+    "FC1",
+    "C1",
+    "C3",
+    "C5",
+    "CP3",
+    "CP1",
+    "Pz",
+    "CPz",
+    "Fz",
+    "FC4",
+    "FC2",
+    "Cz",
+    "C2",
+    "C4",
+    "C6",
+    "CP4",
+    "CP2"
+  ],
+  "code_hashes": {
+    "analysis_outputs/cmpb_analysis_closure_20261015/config.json": "234e3cef38b9a012ad2aa13860f47ca433e77cfa94fd4d446bfc445e574fdf63",
+    "analysis_outputs/cmpb_analysis_closure_20261015/PROTOCOL.md": "8dd296a713a6c6f55563cd456a4d23db98ba75ca692ce194f2667cdd914fefc4",
+    "analysis_outputs/cmpb_analysis_closure_20261015/study.py": "353645e62e1a5178109827072e8a7c8baa87dda87a440c19ac939f0e6771b4cd",
+    "analysis_outputs/cmpb_analysis_closure_20261015/test_study.py": "cae4d3164095a5b2767a2e01e9ce89d27a4f0126a1932b6751bbf35f04bcafe5",
+    "analysis_outputs/cmpb_analysis_closure_20261015/analyze.py": "bbab78f15a8cd4e9898dc3edc8ff7635dec74951d88599b4a5114b131dfa50f1",
+    "analysis_outputs/cmpb_analysis_closure_20261015/verify.py": "4a729589198e6a7891d4f303c2b42e4a7b1e7b3fbd8c0567f3a1352875120bb3",
+    "MI_test/MI_loso_project/mrfbcsp_loso.py": "29caaa499115464c6c14c28db0d291a39bdd90f55eadf98c127878d04012135f",
+    "analysis_outputs/cmpb_floor_gate_20260924/run_floor_gate.py": "9f4425928ba98873a09b985b992c31ab4bddc0ed781ccc809a5a3ce95531652f",
+    "analysis_outputs/cmpb_budget_20260924/run_budget_causal.py": "7ad7de5d804aa1619baef0dad81fec3e3503fea5f3a666cc80b73a35351ee40b",
+    "analysis_outputs/mi_four_checks_20261007/precision_compare.py": "42dd5eb1a5fb4cbf6420cf5aec3ff99cf380a5b07da014845dbaa09b6042eca2",
+    "analysis_outputs/cmpb_dreyer_policy_extension_20261008/run.py": "d8399b1c21050608359db30bc8b932059c3be911701e28f24bf0223d861e99c5",
+    "analysis_outputs/cmpb_dreyer_policy_extension_20261008/PROTOCOL.md": "599f7a5821a5f4dc667f5c7ca42f335cb7d4d5e37ef328b5093367d1f4174f61",
+    "analysis_outputs/cmpb_confirmation_dreyer2023/run_manifest.json": "1e0820574da7f309e91addd4602fcf4e0cc370bcb70c1ce38346d2fb983cbd53",
+    "analysis_outputs/mi_four_checks_20261007/precision_results/lock.json": "2ac69aa06022fed017eae59b98abf6a4de10aec17a6e90a6aa8e32299e23fbcc",
+    "analysis_outputs/cmpb_dreyer_policy_extension_20261008/results/lock.json": "c74e71db6116fc360e24f576086e5ab3bc58dffd3e77a69f5b143800f6d1de95",
+    "analysis_outputs/cmpb_cho_amplitude_versions_20261015/LOCK.json": "3805f3d877e57e9cebaf3bb5efdf077be16f78fe1bc01e822cdaf9e4070b1514",
+    "analysis_outputs/cmpb_cho_amplitude_versions_20261015/study.py": "5845166f81871c45ac63ee4d474fc3aa78e350866b94045c09386bc0bc5c8295"
+  },
+  "anchor_hashes": {
+    "analysis_outputs/cmpb_dreyer_policy_extension_20261008/results/predictions_coherent_absolute_subject.npz": "0a691a39e23a37396059cc7140439969a94e12e87f56f889c178ca0bf18bd49e",
+    "analysis_outputs/cmpb_dreyer_policy_extension_20261008/results/predictions_coherent_absolute_dataset_subject.npz": "2aea1849548335423cb7980385fa16cfce762792cdea1c1161b63c6137a9dc39",
+    "analysis_outputs/cmpb_dreyer_policy_extension_20261008/results/predictions_relative_subject.npz": "74dc5ba66d0ff945e5bda94850d826c56ac273b266635dcb96851e403b920a6a",
+    "analysis_outputs/cmpb_dreyer_policy_extension_20261008/results/predictions_relative_dataset_subject.npz": "ed64ee33c7080eea5438e38a0bddca553ff67d32a05569e82cba70b0a1680b8a"
+  },
+  "environment": {
+    "python": "3.9.13",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2"
+  },
+  "fits": 8,
+  "source_subjects": 224,
+  "target_subjects": 87,
+  "target_trials": 20792,
+  "scope": "last exploratory external amplitude-version follow-up; not confirmatory registration",
+  "_anonymous_export": {
+    "paths": "Identifying prefixes replaced by relative/generic locations.",
+    "historical_hashes": "Refer to pre-anonymization originals, not a newly frozen anonymous run.",
+    "current_integrity": "Use root SHA256SUMS for distributed file hashes."
+  }
+}

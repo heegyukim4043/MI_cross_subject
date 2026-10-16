@@ -1,0 +1,23 @@
+{
+  "subject_BACs_recomputed_with_sklearn": 696,
+  "all_draws_recomputed_from_saved_indices": true,
+  "all_pointwise_and_simultaneous_CIs_verified": true,
+  "adopted_prediction_anchors": 4,
+  "relative_output_controls": 10,
+  "relative_prediction_flips": 0,
+  "prediction_freeze_hashes_pass": true,
+  "source_and_input_hashes_pass": true,
+  "full_EEG_training_reimplemented_independently": false,
+  "physical_calibration_validated": false,
+  "csv_float_parser": "round_trip",
+  "default_csv_parser_roundoff": {
+    "mismatched_elements": 92,
+    "maximum_difference": 1.4210854715202004e-14
+  },
+  "round_trip_binary_score_reconstruction": {
+    "mismatched_elements": 0,
+    "maximum_difference": 0.0
+  },
+  "frozen_verifier_assertions_and_tolerances_unchanged": true,
+  "reader_wrapper_added_after_initial_QA": true
+}
